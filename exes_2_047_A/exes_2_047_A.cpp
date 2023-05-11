@@ -6,7 +6,7 @@ int binarisearch(int Isro[101], int n, int desiredelement) {
 	int upperbound = n - 1;
 
 	while (lowerbound <= upperbound) {
-		int(lowerbound + upperbound) / 2;
+		int(lowerbound + upperbound)/2;
 
 		if (Isro[101] = desiredelement) {
 			("found");
@@ -24,10 +24,25 @@ int binarisearch(int Isro[101], int n, int desiredelement) {
 	}
 
 	if (lowerbound <= upperbound) {
-			int(lowerbound + upperbound) / 2;
+			int(lowerbound + upperbound)/2;
 		}
 
 	("Not Found"); {
 	return 0;
 	}
+
+}
+
+int main() {
+	int Isro[101] = { 1, 2, 1, 4, 5,6, 7, 8, 9, 10 };
+	int n = sizeof(Isro) / sizeof(Isro[101]);
+
+	int desiredelement;
+	cout << "enter the element to searched";
+	cin >> desiredelement;
+
+	int result = binarisearch(Isro, n, desiredelement);
+
+	return 0;
+
 }
